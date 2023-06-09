@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Custom OpenFL JS script" package="com.feathersui.CustomJsLibrary" version="1.0.0" company="Bowler Hat LLC"/>
+	<app main="SampleMain" file="CustomJsLibrary"/>
+
+	<window allow-high-dpi="true"/>
+	<window fps="60"/>
+	<window fps="0" if="html5"/>
+	
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+	
+	<!--
+		this directory contains a .js file that should be copied to the output.
+	-->
+	<template path="custom-templates"/>
+
+	<!--
+		adds <script src="./test.js"></script> to the generated index.html file
+	-->
+	<dependency name="./custom-library.js" if="html5"/>
+</project>
