@@ -17,7 +17,7 @@
 	<template path="custom-templates"/>
 
 	<!--
-		adds <script src="./test.js"></script> to the generated index.html file
+		add <script src="./custom-library.js"></script> to the generated index.html file
 	-->
 	<dependency name="./custom-library.js" if="html5"/>
 </project>
